@@ -7,3 +7,4 @@
 2025-07-08 10:00:07 ERROR Unable to write to file /tmp/report.txt
 2025-07-08 10:00:08 INFO User logout: user123
 2025-07-08 10:00:09 ERROR Timeout while reading from socket
+2025-07-08 12:00:00 INFO Dummy log entry
