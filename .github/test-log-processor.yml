@@ -1,0 +1,25 @@
+name: Test log_processor.sh
+
+on:
+  push:
+    paths:
+      - '**.sh'
+      - 'tests/**'
+  pull_request:
+    paths:
+      - '**.sh'
+      - 'tests/**'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make test script executable
+        run: chmod +x test_log_processor.sh
+
+      - name: Run unit tests
+        run: ./test_log_processor.sh
