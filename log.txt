@@ -1,0 +1,9 @@
+2025-07-08 10:00:01 INFO Starting application
+2025-07-08 10:00:02 WARNING Low disk space on /dev/sda1
+2025-07-08 10:00:03 INFO User login: user123
+2025-07-08 10:00:04 ERROR Failed to connect to database
+2025-07-08 10:00:05 WARNING High memory usage detected
+2025-07-08 10:00:06 INFO Scheduled job completed
+2025-07-08 10:00:07 ERROR Unable to write to file /tmp/report.txt
+2025-07-08 10:00:08 INFO User logout: user123
+2025-07-08 10:00:09 ERROR Timeout while reading from socket
