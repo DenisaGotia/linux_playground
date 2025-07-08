@@ -1,0 +1,22 @@
+name: Log Processor
+
+on:
+  push:
+    paths:
+      - log.txt
+      - log_processor.sh
+  workflow_dispatch:
+
+jobs:
+  process-logs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x log_processor.sh
+
+      - name: Run log_processor.sh (errors-only + summary)
+        run: ./log_processor.sh --input log.txt --errors-only --summary
