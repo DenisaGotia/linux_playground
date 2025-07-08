@@ -1,0 +1,5 @@
+
+==== Summary ====
+ERRORS: 1
+WARNINGS: 1
+INFO: 2
